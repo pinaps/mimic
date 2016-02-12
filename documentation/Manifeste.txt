@@ -1,0 +1,39 @@
+1. Nom du projet
+mimic.com
+
+2. Vision ou pitch du projet
+Afficher et enregistrer des "strips".
+Chaque strip constitue une entité constituée de 3 images (300x300px) et 3 textes courts.
+
+
+3. Fonctionnalités principales + Estimation de temps en jours
+Page de lecture basé sur bootstrap (préserve la possibilité d'un développement pour smartphone)
+Page de création de strips (images et textes).
+Barre de navigation permettant de trier par date/ popularité/ aléatoire
+Pas d'identification dans un premier temps.
+
+4. Planning
+Mockup, Git et bdd 1/2 journée
+Détermination des outils:
+Balsamiq
+Git
+W ?
+jQuery mobile ? 
+https://openclassrooms.com/courses/un-site-web-dynamique-avec-jquery/le-framework-mobile-jquery-mobile
+
+html/css/js/php/MySql
+AJAX
+http://www.croppic.net/
+...
+
+5. Développements possibles
+Gestion des utilisateurs (login, nav personnalisée avec favoris, vus/non vus, possibilité de signer ses publications)
+Gestion de commentaires
+Implémentation sur smartphone
+Partage sur réseaux sociaux
+
+
+6. Equipe (membre + rôle)
+Allan Géant
+Romain Treppoz
+Pair-programming
