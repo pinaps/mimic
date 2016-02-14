@@ -1,0 +1,11 @@
+Ressources pour le projet mimic.com
+
+
+Ressources CODES pour retailler les images :
+http://www.jqueryrain.com/demo/jquery-crop-image-plugin/
+https://openclassrooms.com/courses/un-site-web-dynamique-avec-jquery/le-framework-mobile-jquery-mobile
+http://www.jqueryrain.com/?VAAZCOTI
+
+
+Prise de photos mode photomaton
+http://www.cheese-cam.com/
