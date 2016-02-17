@@ -1,3 +1,28 @@
+<?php
+
+include(__DIR__.'/config/connect.php');
+
+// Moteur de recherche en GET
+if(isset($_GET['stripName'])) {
+  $stripName = $_GET['stripName'];
+
+  $query = $pdo->prepare('SELECT * FROM strips WHERE titre LIKE ?');
+  $query->bindValue(1, '%'.$stripName.'%', PDO::PARAM_STR);
+  $query->execute();
+
+  $allStrips = $query->fetchAll();
+}
+
+else {
+
+  $query = $pdo->prepare('SELECT * FROM strips'); // Prépare la requête
+  $query->execute();
+  $allStrips = $query->fetchAll();
+}
+
+?>
+
+
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -63,105 +88,95 @@
 
     
  
-
+        <!-- Affichage barre de navigation -->
         <div class="col-md-1 navigation navbar-fixed-top">
-          <h2>La nav</h2>
-          <p>Pour le moment tout est en dur</p>
-          <!-- On peut créer des boutons ici http://buttonoptimizer.com/ -->
+          <h2>Mimiques</h2>
+            <!-- On peut créer des boutons ici http://buttonoptimizer.com/ -->
           <!-- les télécharger au format png et les rendre responsive -->
           <!-- deux exemples ci-après -->
           <img src="img/button_lpr.png" class="img-responsive" alt="bouton tri les plus récents">
-          <p><a class="btn btn-default img-responsive" href="#" role="button">Les plus récentes</a></p>
+          <p><a class="btn btn-primary img-responsive" href="#" role="button">Les plus récentes</a></p>
           <img src="img/button_lmn.png" class="img-responsive" alt="bouton tri les plus récents">
           <p><a class="btn btn-default" href="#" role="button">Les mieux notées</a></p>
+          <p><a class="btn btn-warning" href="#" role="button">Aléatoire</a></p>
           <hr>
+
+          <!-- Moteur de recherche de STRIP en GET -->
+            <form id="search-form" method="GET" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+              <div class="form-group">
+                <label for="stripName">Rechercher un strip en fonction de son intitulé</label>
+                <input type="text" class="form-control" id="stripName" name="stripName" />
+                <button type="submit" class="btn-primary" name="action" value="search">OK</button>
+              </div>
+            </form>
+            <hr />
+
           <p><a class="btn btn-default" href="#" role="button">CGU</a></p>
           <p><a class="btn btn-default" href="mailto:todo@todo.com" role="button">Contact</a></p>
+          <p><a class="btn btn-default" href="mailto:todo@todo.com" role="button">Aide</a></p>
+          <p><a class="btn btn-default" href="mailto:todo@todo.com" role="button">Remerciements</a></p>
           <hr>
+          <p><a class="btn btn-default" href="envoyer.php" role="button">Se connecter</a></p>
+          <hr><hr><hr><hr><hr>
           <p><a class="btn btn-default" href="envoyer.php" role="button">Je veux le faire</a></p>
         </div>
 
+
+           <!--  Affiche la liste des strips dans un foreach -->
+               
     <div class="container-fluid">
       <div class="row">
+               
+
+    <?php if(!empty($allStrips)): ?>
+      <?php foreach ($allStrips as $keyStrip => $strip): ?>
+         <!--  On réserve l'espace de la navigation à gauche -->
         <div class="col-md-1"></div>
-
         <div class="col-md-11">
-            <h2>Strip d'essai - le premier</h2>
-            <button type="button" class="btn btn-default btn-lg">
+        <!-- Affiche le titre -->
+          <h2> <?php echo $strip['titre']; ?> </h2>
+
+
+          <!-- Affiche les images et leurs textes respectifs -->
+          <div class="col-md-3">
+            <img src=" <?php echo $strip['image1']; ?>" class="mimic img-responsive" alt="une mimique">
+            <p> <?php echo $strip['texte1']; ?> </p>
+          </div>
+
+          <div class="col-md-3">
+            <img src=" <?php echo $strip['image2']; ?>" class="mimic img-responsive" alt="une mimique">
+            <p> <?php echo $strip['texte2']; ?> </p>
+          </div>
+
+          <div class="col-md-3">
+            <img src=" <?php echo $strip['image3']; ?>" class="mimic img-responsive" alt="une mimique">
+            <p> <?php echo $strip['texte3']; ?> </p>
+          </div>
+
+          <div class="col-md-2">
+            <button type="button" class="btn btn-primary btn-lg">
               <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> J'aime !
             </button>
-          <div class="col-md-3">
-            <img src="img/image_test_11.jpg" class="mimic img-responsive" alt="une mimique">
-            <p>Le texte qui illustre la première image de la première série.</p>
           </div>
-          <div class="col-md-3">
-            <img src="img/image_test_12.jpg" class="mimic img-responsive" alt="une mimique">
-            <p>Le texte qui illustre la deuxième image de la première série.</p>
-          </div>
-          <div class="col-md-3">
-            <img src="img/image_test_13.jpg" class="mimic img-responsive" alt="une mimique">
-            <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
-            <p>Etc...</p>
-           </div>
         </div> <!-- col-md-11 -->
+            
 
-         <div class="col-md-1"></div>
-         <div class="col-md-11">
-            <h2>Strip d'essai - le deuxième - presque muet</h2>
-            <button type="button" class="btn btn-default btn-lg">
-              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> J'aime !
-            </button>
-          <div class="col-md-3">
-            <img src="img/image_test_21.jpg" class="mimic img-responsive" alt="une mimique">
-            <p></p>
-          </div>
-          <div class="col-md-3">
-            <img src="img/image_test_22.jpg" class="mimic img-responsive" alt="une mimique">
-            <p></p>
-          </div>
-          <div class="col-md-3">
-            <img src="img/image_test_23.jpg" class="mimic img-responsive" alt="une mimique">
-            <p>Des émoticônes, ce serait bien !.</p>
-            <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
-          </div>
-        </br>
-         </div>
-  
-         <div class="col-md-1"></div>
-         <div class="col-md-11">
-          <h2>Strip d'essai - le troisième - très bavard - 255 caractères partout.</h2>
-          <button type="button" class="btn btn-default btn-lg">
-            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> J'aime !
-          </button>
-          <div class="col-md-3">
-            <img src="img/image_test_31.jpg" class="mimic img-responsive" alt="une mimique">
-            <p>On commence avec une bose dose de Lorem.
-            Hanc regionem praestitutis celebritati diebus invadere parans dux ante edictus per solitudines Aboraeque amnis herbidas ripas, suorum indicio proditus, qui admissi flagitii metu exagitati ad praesidia desciver ale</p>
-          </div>
-          <div class="col-md-3">
-            <img src="img/image_test_32.jpg" class="mimic img-responsive" alt="une mimique">
-            <p>On en rajoute encore une couche ( toujours 255 caractères, c'est le maximum possible dans cette zone de saisie).
-            Il faudra prévoir la possibilité d'aller à la ligne.
-            Et aussi d'introduire des caractères spéciaux. Dux ante edictus per solitudines Aboraet</p>
-          </div>
-          <div class="col-md-3">
-            <img src="img/image_test_33.jpg" class="mimic img-responsive" alt="une mimique">
-            <p>Des émoticônes, ce serait bien !
-            Là, j'aimerais des sauts de ligne.
-            Et là aussi.
-            Allez, encore une bonne couche de 255 caractères. Ce truc doit vraiment devenir illisible, non ? c'est le maximum possible dans cette zone de saisie). J'en suis à 255 </p>
-            <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
-          </div>
+      <?php endforeach;
+
+      else: ?>
+        <div class="col-md-3">
+          <h2>Désolé : aucun strip ne correspond à cette recherche ...</h5>
         </div>
+      <?php endif; ?>
 
-      </div> <!-- row -->
+        </div> <!-- row -->
+      </div> <!-- /container-fluid -->
 
-      <hr>
 
       <footer>
-        <p>&copy; webforce3 2016</p>
+        <hr>
+        <p>&copy; webforce3, mars 2016</p>
       </footer>
-    </div> <!-- /container-fluid -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
