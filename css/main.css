@@ -22,7 +22,8 @@ html, body {
         } 
 
         #nav {
-            background: #CCC;
+            color-font:white;
+            background: #292121;
             height: 100%;
             padding: 20px;
             position: fixed;
@@ -33,8 +34,9 @@ html, body {
             width: auto;
         }
 
-        #nav a.btn {
+        #nav button.btn {
             width: 100%;
+            position: relative;
         }
         .strip-img {
             padding: 10px;
@@ -43,11 +45,19 @@ html, body {
             width: 100%;
         }
 
+{
+    font-color: white;
+}
+
+  
 
 
 
-
-
+.absoluteIcon {
+    position: absolute;
+    left: 10px;
+    top:8px;
+}
 
 
 

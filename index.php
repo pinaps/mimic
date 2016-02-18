@@ -62,19 +62,19 @@ else {
           <!-- deux exemples ci-après -->
 
             <button type="button" class="btn btn-primary">
-              <span class="glyphicon glyphicon-time" aria-hidden="true"></span> Les plus récentes
+              <span class="glyphicon glyphicon-time absoluteIcon" aria-hidden="true"></span> Les plus récentes
             </button>
 
-            <br>
-            <p><a>
+            <br><br>
+            
             <button class="btn btn-primary">
-              <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> Les mieux notées
+              <span class="glyphicon glyphicon-arrow-up absoluteIcon" aria-hidden="true"></span> Les mieux notées
             </button>
-            </a></p>
-            <br>
+            
+            <br><br>
 
-            <button type="button" class="btn btn-primary">
-              <span class="glyphicon glyphicon-random" aria-hidden="true"></span> Aléatoire
+            <button  class="btn btn-primary">
+              <span class="glyphicon glyphicon-random span absoluteIcon" aria-hidden="true"></span> En Aléatoire
             </button>
           
           <hr>
@@ -89,14 +89,36 @@ else {
             </form>
             <hr />
 
-          <p><a class="btn btn-success" href="#" role="button">CGU</a></p>
-          <p><a class="btn btn-success" href="mailto:todo@todo.com" role="button">Contact</a></p>
-          <p><a class="btn btn-success" href="mailto:todo@todo.com" role="button">Aide</a></p>
-          <p><a class="btn btn-success" href="mailto:todo@todo.com" role="button">Remerciements</a></p>
+          <button class="btn btn-success">
+              <span class="glyphicon glyphicon-book absoluteIcon" aria-hidden="true"></span> CGU
+          </button> 
+          <br><br>
+           <button class="btn btn-success">
+              <span class="glyphicon glyphicon-pencil absoluteIcon" aria-hidden="true"></span> Contact
+          </button> 
+          <br><br> 
+           <button class="btn btn-success">
+              <span class="glyphicon glyphicon-question-sign absoluteIcon" aria-hidden="true"></span> Aide
+          </button> 
+          <br><br> 
+           <button class="btn btn-success">
+              <span class="glyphicon glyphicon-heart absoluteIcon" aria-hidden="true"></span> Remerciements
+          </button>    
+
+          <!-- <p><a class="btn btn-success taille" href="#" role="button">CGU</a></p>
+          <p><a class="btn btn-success taille" href="mailto:todo@todo.com" role="button">Contact</a></p>
+          <p><a class="btn btn-success taille" href="mailto:todo@todo.com" role="button">Aide</a></p>
+          <p><a class="btn btn-success taille" href="mailto:todo@todo.com" role="button">Remerciements</a></p> -->
           <hr>
-          <p><a class="btn btn-warning" href="envoyer.php" role="button">Se connecter</a></p>
+          <button class="btn btn-warning">
+              <span class="glyphicon glyphicon-log-in absoluteIcon" aria-hidden="true"></span> Se connecter
+          </button>   
+          <!-- <p><a class="btn btn-warning" href="envoyer.php" role="button">Se connecter</a></p> -->
           <hr><hr><hr><hr><hr>
-          <p><a class="btn btn-warning" href="envoyer.php" role="button">Je veux le faire</a></p>
+          <button class="btn btn-danger">
+              <span class="glyphicon glyphicon-film absoluteIcon" aria-hidden="true"></span> Je veux le faire
+          </button>   
+          <!-- <p><a class="btn btn-warning" href="envoyer.php" role="button">Je veux le faire</a></p> -->
         </div>
 
 
@@ -133,16 +155,16 @@ else {
           </div>
 
           <div class="col-md-2">
-            <button type="button" class="btn btn-warning btn-lg">
-              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Je veux publier <br>mes textes <br>avec ces photos !
+            <button type="button" class="btn btn-danger">
+              <span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Réutiliser les phot
             </button>
             <br><br>
-            <button type="button" class="btn btn-warning btn-lg">
-              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Je veux publier<br> mes images<br> avec ce texte !
+            <button type="button" class=" btn btn-danger">
+              <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> Réutiliser le texte 
             </button>
-            <br><br><br>
-            <button type="button" class="btn btn-danger btn-lg">
-              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> J'aime !
+            <br><br>
+            <button type="button" class="btn btn-success">
+              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> J'aime 
             </button>
           </div>
         </div> <!-- col-md-11 -->

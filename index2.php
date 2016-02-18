@@ -89,14 +89,14 @@ else {
             </form>
             <hr />
 
-          <p><a class="btn btn-success" href="#" role="button">CGU</a></p>
-          <p><a class="btn btn-success" href="mailto:todo@todo.com" role="button">Contact</a></p>
-          <p><a class="btn btn-success" href="mailto:todo@todo.com" role="button">Aide</a></p>
-          <p><a class="btn btn-success" href="mailto:todo@todo.com" role="button">Remerciements</a></p>
+          <p><a class="btn btn-success taille" href="#" role="button">CGU</a></p>
+          <p><a class="btn btn-success taille" href="mailto:todo@todo.com" role="button">Contact</a></p>
+          <p><a class="btn btn-success taille" href="mailto:todo@todo.com" role="button">Aide</a></p>
+          <p><a class="btn btn-success taille" href="mailto:todo@todo.com" role="button">Remerciements</a></p>
           <hr>
-          <p><a class="btn btn-warning" href="envoyer.php" role="button">Se connecter</a></p>
+          <p><a class="btn btn-warning taille" href="envoyer.php" role="button">Se connecter</a></p>
           <hr><hr><hr><hr><hr>
-          <p><a class="btn btn-warning" href="envoyer.php" role="button">Je veux le faire</a></p>
+          <p><a class="btn btn-warning taille" href="envoyer.php" role="button">Je veux le faire</a></p>
         </div>
 
 
