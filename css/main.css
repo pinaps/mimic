@@ -14,7 +14,34 @@
     background-color: #eee;
   }
 
+/*ajout EP pour responsive */
+html, body {
+            background: #EEE;
+            height: 100%;
+            width: 100%;
+        } 
 
+        #nav {
+            background: #CCC;
+            height: 100%;
+            padding: 20px;
+            position: fixed;
+            width: 220px;
+        }
+        #main {
+            margin-left: 220px;
+            width: auto;
+        }
+
+        #nav a.btn {
+            width: 100%;
+        }
+        .strip-img {
+            padding: 10px;
+        }
+        .strip-img img {
+            width: 100%;
+        }
 
 
 
