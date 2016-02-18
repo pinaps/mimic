@@ -1,4 +1,4 @@
- .mimic {
+.mimic {
     border: 1px solid #000;
     display: block;
     margin-left: auto;
@@ -22,7 +22,7 @@ html, body {
         } 
 
         #nav {
-            color-font:white;
+            color:#fff;
             background: #292121;
             height: 100%;
             padding: 20px;
@@ -44,7 +44,6 @@ html, body {
         .strip-img img {
             width: 100%;
         }
-
 
 
   
