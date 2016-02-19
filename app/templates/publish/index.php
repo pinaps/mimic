@@ -57,6 +57,7 @@
           <button type="submit" class="btn btn-default btn-lg">
             <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span> Envoyer !
           </button>
+
         </div>
 
       </div> <!-- col-md-11 -->
