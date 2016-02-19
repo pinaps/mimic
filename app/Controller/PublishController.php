@@ -16,4 +16,9 @@ class PublishController extends Controller
 		$this->show('publish/index');
 	}
 
+	public function submit()
+	{
+		print_r($_POST);
+	}
+
 }
