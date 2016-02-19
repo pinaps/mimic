@@ -89,11 +89,12 @@
           <p><a class="btn btn-success taille" href="mailto:todo@todo.com" role="button">Remerciements</a></p> -->
           <br><br>
            
-          <!-- <p><a class="btn btn-warning" href="envoyer.php" role="button">Se connecter</a></p> -->
+          <!-- <p><a class="btn btn-warning" href="publier.php" role="button">Publier un strip</a></p> -->
           <br><br><br><br><br><br>
           <button class="btn btn-danger">
-              <span class="glyphicon glyphicon-film absoluteIcon" aria-hidden="true"></span> Je veux le faire
-          </button>   
+              <span class="glyphicon glyphicon-film absoluteIcon" aria-hidden="true"></span> 
+              <a id="btnFaire" href="<?= $this->url('publier'); ?>">Je veux le faire</a>
+          </button>
           <!-- <p><a class="btn btn-warning" href="envoyer.php" role="button">Je veux le faire</a></p> -->
         </div>
 

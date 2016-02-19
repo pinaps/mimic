@@ -58,7 +58,10 @@ html, body {
     top:8px;
 }
 
-
+#btnFaire {
+color: white;
+text-decoration: none;
+}
 
 
 
