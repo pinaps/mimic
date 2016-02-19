@@ -46,7 +46,9 @@ html, body {
         }
 
 
-  
+  textarea {
+    resize:none;
+  }
 
 
 

@@ -9,7 +9,7 @@
         <h2>Poste tes photos et/ou tes textes</h2>
         <!-- = remplace le php echo -->
         <div class="col-md-3">
-          <img src="img/donne_ta_photo.jpg" class="mimic" alt="donne ta photo">
+          <img src="<?= $this->assetUrl("img/donne_ta_photo.jpg")?>"class="mimic img-responsive" alt="donne ta photo">
 
           <div class="form-group">
             <label for="exampleInputFile">Première photo</label>
@@ -19,7 +19,7 @@
 
         </div>
         <div class="col-md-3">
-          <img src="img/donne_ta_photo.jpg" class="mimic" alt="donne ta photo">
+          <img src="<?= $this->assetUrl("img/donne_ta_photo.jpg")?>" class="mimic img-responsive" alt="donne ta photo">
 
           <div class="form-group">
             <label for="exampleInputFile">Deuxième photo</label>
@@ -29,7 +29,7 @@
 
         </div>
         <div class="col-md-3">
-          <img src="img/donne_ta_photo.jpg" class="mimic" alt="donne ta photo">
+          <img src="<?= $this->assetUrl("img/donne_ta_photo.jpg")?>" class="mimic img-responsive" alt="donne ta photo">
 
           <div class="form-group">
             <label for="exampleInputFile">Troisième photo</label>
@@ -43,15 +43,15 @@
         <div class="col-md-12">
 
           <div class="col-md-3">
-            <textarea class="form-control mimic" rows="5" name="texte1" placeholder="Insére le premier texte"></textarea>
+            <textarea class="form-control mimic" rows="5" name="texte1" maxlength="255" placeholder="Insére le premier texte"></textarea>
           </div>
 
           <div class="col-md-3">
-            <textarea class="form-control mimic" rows="5" name="texte2" placeholder="Insére le premier texte"></textarea>
+            <textarea class="form-control mimic" rows="5" name="texte2" maxlength="255" placeholder="Insére le premier texte"></textarea>
           </div>
 
           <div class="col-md-3">
-            <textarea class="form-control mimic" rows="5" name="texte3" placeholder="Insére le premier texte"></textarea>
+            <textarea class="form-control mimic" rows="5" name="texte3" maxlength="255" placeholder="Insére le premier texte"></textarea>
           </div>                        
 
           <button type="submit" class="btn btn-default btn-lg">
