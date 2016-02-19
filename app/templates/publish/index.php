@@ -9,7 +9,7 @@
         <h2>Poste tes photos et/ou tes textes</h2>
         <!-- = remplace le php echo -->
         <div class="col-md-3">
-          <img src="<?= $this->assetUrl("img/donne_ta_photo.jpg")?>"class="mimic img-responsive" alt="donne ta photo">
+          <img src="<?= $this->assetUrl("img/donne_ta_photo.jpg")?>"class="mimic img-responsive" name="texte1" alt="donne ta photo">
 
           <div class="form-group">
             <label for="exampleInputFile">Première photo</label>
@@ -19,7 +19,7 @@
 
         </div>
         <div class="col-md-3">
-          <img src="<?= $this->assetUrl("img/donne_ta_photo.jpg")?>" class="mimic img-responsive" alt="donne ta photo">
+          <img src="<?= $this->assetUrl("img/donne_ta_photo.jpg")?>" class="mimic img-responsive" name="texte2" alt="donne ta photo">
 
           <div class="form-group">
             <label for="exampleInputFile">Deuxième photo</label>
@@ -29,7 +29,7 @@
 
         </div>
         <div class="col-md-3">
-          <img src="<?= $this->assetUrl("img/donne_ta_photo.jpg")?>" class="mimic img-responsive" alt="donne ta photo">
+          <img src="<?= $this->assetUrl("img/donne_ta_photo.jpg")?>" class="mimic img-responsive" name="texte3" alt="donne ta photo">
 
           <div class="form-group">
             <label for="exampleInputFile">Troisième photo</label>
