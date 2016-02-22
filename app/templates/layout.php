@@ -80,7 +80,8 @@
           </button> 
           <br><br> 
            <button class="btn btn-success">
-              <span class="glyphicon glyphicon-heart absoluteIcon" aria-hidden="true"></span> Remerciements
+              <span class="glyphicon glyphicon-heart absoluteIcon" aria-hidden="true"></span>
+              <a id="btnFaire" href="<?= $this->url('merci'); ?>">Remerciements</a>
           </button>    
 
           <!-- <p><a class="btn btn-success taille" href="#" role="button">CGU</a></p>
