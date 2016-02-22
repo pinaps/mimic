@@ -1,7 +1,33 @@
 <?php $this->layout('layout', ['title' => 'Accueil']) ?>
 
-<?php $this->start('main_content') ?>
-	<!--  Affiche la liste des strips dans un foreach -->
+
+
+<?php $this->start('main_content');
+
+// ouvre la bdd 
+require(__DIR__.'/config/connect.php');
+
+// Moteur de recherche en GET
+if(isset($_GET['stripName'])) {
+  $stripName = $_GET['stripName'];
+
+  $query = $pdo->prepare('SELECT * FROM strips WHERE titre LIKE ?');
+  $query->bindValue(1, '%'.$stripName.'%', PDO::PARAM_STR);
+  $query->execute();
+
+  $allStrips = $query->fetchAll();
+}
+
+else {
+
+  $query = $pdo->prepare('SELECT * FROM strips'); // Prépare la requête
+  $query->execute();
+  $allStrips = $query->fetchAll();
+}
+
+?>
+
+  <!--  Affiche la liste des strips dans un foreach -->
     
   <div id="main">           
     <div class="container-fluid">
@@ -9,6 +35,7 @@
                
 
     <?php if(!empty($allStrips)): ?>
+
       <?php foreach ($allStrips as $keyStrip => $strip): ?>
          
        
@@ -19,7 +46,9 @@
 
           <!-- Affiche les images et leurs textes respectifs -->
           <div class="col-md-3">
-            <img src=" <?php echo $strip['image1']; ?>" class="mimic img-responsive" alt="une mimique">
+
+            <img src=" <?= $this->assetUrl("img/mafalda.jpg")?>" class="mimic img-responsive" alt="une mimique">            
+            <!-- TODO: insérer l'image depuis nom en BDD -->
             <p> <?php echo $strip['texte1']; ?> </p>
           </div>
 

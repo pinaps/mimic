@@ -9,7 +9,8 @@ https://openclassrooms.com/courses/un-site-web-dynamique-avec-jquery/le-framewor
 http://www.jqueryrain.com/?VAAZCOTI
 
 http://www.croppic.net/ testé
-explications en français
+
+explications en français sur Jcrop (vieux truc)
 http://www.megaptery.com/2011/08/jcrop-recadrez-dynamiquement-vos-images-avec-jquery.html
 
 et aussi
