@@ -66,8 +66,7 @@
               <br><br>
               <br><br>
               <br><br>
-              <br><br>
-              <br><br>
+             
          
             	<a class="btn btn-success glyphicon  largeurBtn" type="button" href="<?= $this->url('merci'); ?>"> <span class="glyphicon glyphicon-book absoluteIcon" aria-hidden="true"></span>CGU</a>
   	     		<br><br>

@@ -24,16 +24,19 @@
          url('../fonts/banksia-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
     }
 
+  body{  background-image: url('../img/testfinish.jpg') }
 html, body {
+
             font-family: banksia,Arial,Comic;
-            background: #EEE;
+            color: white;
+            
             height: 100%;
             width: 100%;
         } 
 
         #nav {
             color:#fff;
-            background: #292121;
+            background: black;
             height: 100%;
             padding: 20px;
             position: fixed;
@@ -87,9 +90,17 @@ margin-top:4%;
     width: 180px;
 
 }
-
+#exampleInputFile {
+    font-family: banksia;
+}
 
 
 .btn {
     font-family: banksia,Arial;
+}
+
+#btnEnvoyer {
+    float: right;    
+    margin-top: 3%;
+    margin-left:2%;
 }

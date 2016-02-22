@@ -45,10 +45,11 @@
           <textarea class="form-control mimic" rows="5" id="lol" name="texte3" maxlength="255" placeholder="Et enfin la chute :D"></textarea>
 
 
-        </div>
-          <button type="submit" class="btn btn-danger btn-lg">
-            <span class="glyphicon glyphicon-send" aria-hidden="true"></span> Envoyer !
+          <button type="submit" class="btn btn-danger btn-lg" id="btnEnvoyer">
+            <span class="glyphicon glyphicon-send"  aria-hidden="true"></span> Envoyer !
           </button>
+        </div>
+
       
 
         </div>
