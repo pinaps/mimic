@@ -1,5 +1,7 @@
 Ressources pour le projet mimic.com
 
+Tuto upload
+https://www.grafikart.fr/tutoriels/php/intervention-image-375
 
 Ressources CODES pour retailler les images :
 http://www.jqueryrain.com/demo/jquery-crop-image-plugin/ une sélection de plugins et tutoriaux
