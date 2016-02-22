@@ -11,6 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="<?= $this->assetUrl('/img/mimic.ico') ?>">
         <link rel="stylesheet" href="<?= $this->assetUrl('css/bootstrap.min.css') ?>">
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/stylesheet.css') ?>">
+
 <!--      <style>
             body {
                 padding-top: 50px;
@@ -32,31 +34,24 @@
         <!-- Affichage barre de navigation -->
         <div id="nav">
           <h2>Mimiques</h2>
-        <button class="btn btn-warning">
-              <span class="glyphicon glyphicon-log-in absoluteIcon" aria-hidden="true"></span> Se connecter
-          </button>   
-          <br><br>
-            <!-- On peut créer des boutons ici http://buttonoptimizer.com/ -->
-          <!-- les télécharger au format png et les rendre responsive -->
-          <!-- deux exemples ci-après -->
+	        <a class="btn btn-warning glyphicon  largeurBtn" type="button" href="<?= $this->url('home'); ?>"> <span class="glyphicon glyphicon-log-in absoluteIcon" aria-hidden="true"></span>Se connecter</a>
+	        <br><br>
+	           
+	          
+	            <!-- On peut créer des boutons ici http://buttonoptimizer.com/ -->
+	          <!-- les télécharger au format png et les rendre responsive -->
+	          <!-- deux exemples ci-après -->
+	        <a class="btn btn-primary glyphicon  largeurBtn" type="button" href="<?= $this->url('home'); ?>"> <span class="glyphicon glyphicon-time absoluteIcon" aria-hidden="true"></span>Les plus récentes</a>
+	        <br><br>
+	                   
+	        <a class="btn btn-primary glyphicon  largeurBtn" type="button" href="<?= $this->url('home'); ?>"> <span class="glyphicon glyphicon-arrow-up absoluteIcon" aria-hidden="true"></span>Les mieux notées</a>
+	        <br><br>
 
-            <button type="button" class="btn btn-primary">
-              <span class="glyphicon glyphicon-time absoluteIcon" aria-hidden="true"></span> Les plus récentes
-            </button>
-
-            <br><br>
-            
-            <button class="btn btn-primary">
-              <span class="glyphicon glyphicon-arrow-up absoluteIcon" aria-hidden="true"></span> Les mieux notées
-            </button>
-            
-            <br><br>
-
-            <button  class="btn btn-primary">
-              <span class="glyphicon glyphicon-random span absoluteIcon" aria-hidden="true"></span> En Aléatoire
-            </button>
+            <a class="btn btn-primary glyphicon  largeurBtn" type="button" href="<?= $this->url('home'); ?>"> <span class="glyphicon glyphicon-random absoluteIcon" aria-hidden="true"></span>En Aléatoire</a>
+          	<br><br>
+           
           
-          <br><br>
+          
           <!-- Moteur de recherche de STRIP en GET -->
             <form id="search-form" method="GET" action="<?php echo $_SERVER['PHP_SELF']; ?>">
               <div class="form-group">
@@ -66,23 +61,26 @@
               </div>
             </form>
             <br><br>
-
-          <button class="btn btn-success">
-              <span class="glyphicon glyphicon-book absoluteIcon" aria-hidden="true"></span> CGU
-          </button> 
-          <br><br>
-           <button class="btn btn-success">
-              <span class="glyphicon glyphicon-pencil absoluteIcon" aria-hidden="true"></span> Contact
-          </button> 
-          <br><br> 
-           <button class="btn btn-success">
-              <span class="glyphicon glyphicon-question-sign absoluteIcon" aria-hidden="true"></span> Aide
-          </button> 
-          <br><br> 
-           <button class="btn btn-success">
-              <span class="glyphicon glyphicon-heart absoluteIcon" aria-hidden="true"></span>
-              <a id="btnFaire" href="<?= $this->url('merci'); ?>">Remerciements</a>
-          </button>    
+          		<a class="btn btn-danger glyphicon  largeurBtn" type="button" href="<?= $this->url('publier'); ?>"> <span class="glyphicon glyphicon-film absoluteIcon" aria-hidden="true"></span>Je veux le faire</a>
+                <br><br>
+              <br><br>
+              <br><br>
+              <br><br>
+              <br><br>
+              <br><br>
+         
+            	<a class="btn btn-success glyphicon  largeurBtn" type="button" href="<?= $this->url('merci'); ?>"> <span class="glyphicon glyphicon-book absoluteIcon" aria-hidden="true"></span>CGU</a>
+  	     		<br><br>
+          
+            	<a class="btn btn-success glyphicon  largeurBtn" type="button" href="<?= $this->url('merci'); ?>"> <span class="glyphicon glyphicon-pencil absoluteIcon" aria-hidden="true"></span>Contact</a>
+	          	<br><br>
+	           
+		      	<a class="btn btn-success glyphicon  largeurBtn" type="button" href="<?= $this->url('merci'); ?>"> <span class="glyphicon glyphicon-question-sign absoluteIcon" aria-hidden="true"></span>Aide</a>
+	         	<br><br> 
+	           
+	        	<a class="btn btn-success glyphicon  largeurBtn" type="button" href="<?= $this->url('merci'); ?>"> <span class="glyphicon glyphicon-heart absoluteIcon" aria-hidden="true"></span>Remerciements</a>
+	          	<br><br> 
+           
 
           <!-- <p><a class="btn btn-success taille" href="#" role="button">CGU</a></p>
           <p><a class="btn btn-success taille" href="mailto:todo@todo.com" role="button">Contact</a></p>
@@ -92,10 +90,6 @@
            
           <!-- <p><a class="btn btn-warning" href="publier.php" role="button">Publier un strip</a></p> -->
           <br><br><br><br><br><br>
-          <button class="btn btn-danger">
-              <span class="glyphicon glyphicon-film absoluteIcon" aria-hidden="true"></span> 
-              <a id="btnFaire" href="<?= $this->url('publier'); ?>">Je veux le faire</a>
-          </button>
           <!-- <p><a class="btn btn-warning" href="envoyer.php" role="button">Je veux le faire</a></p> -->
         </div>
 
