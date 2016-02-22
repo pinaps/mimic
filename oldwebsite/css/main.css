@@ -2,7 +2,8 @@
     border: 1px solid #000;
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    padding-bottom: 60px;
   }
 
 .navigation {
@@ -19,7 +20,6 @@ html, body {
             background: #EEE;
             height: 100%;
             width: 100%;
-        } 
 
         #nav {
             color-font:white;
@@ -46,6 +46,7 @@ html, body {
         }
 
  
+        } 
 
 
 
@@ -59,3 +60,5 @@ html, body {
 
 
 
+#lol { 
+margin-bottom: 160px;}
