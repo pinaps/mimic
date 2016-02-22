@@ -13,7 +13,7 @@
 
           <div class="form-group  ">
             <label for="exampleInputFile">Première photo</label>
-            <input type="file" id="exampleInputFile">
+            <input type="file" id="exampleInputFile" name="photo1">
            
           </div>
           <!--  TEXTE 1 -->
@@ -25,7 +25,7 @@
 
           <div class="form-group">
             <label for="exampleInputFile">Deuxième photo</label>
-            <input type="file" id="exampleInputFile">
+            <input type="file" id="exampleInputFile" name="photo2">
             
           </div>
           <!-- TEXTE 2 -->
@@ -37,7 +37,7 @@
 
           <div class="form-group">
             <label for="exampleInputFile">Troisième photo</label>
-            <input type="file" id="exampleInputFile">
+            <input type="file" id="exampleInputFile" name="photo3">
             
           </div>
           <!-- TEXTE 3 -->

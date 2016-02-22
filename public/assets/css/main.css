@@ -24,7 +24,9 @@
          url('../fonts/banksia-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
     }
 
-  body{  background-image: url('../img/testfinish.jpg') }
+  body{  background-image: url('../img/testfinish.jpg');
+         background-attachment: fixed;   
+             }
 html, body {
 
             font-family: banksia,Arial,Comic;
