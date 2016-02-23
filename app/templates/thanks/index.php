@@ -13,11 +13,13 @@
         <img src="<?= $this->assetUrl("img/mafalda.jpg")?>"class="mimic img-responsive" alt="BD Mafalda">
         <img src="<?= $this->assetUrl("img/peanuts.jpg")?>"class="mimic img-responsive" alt="BD Peanuts">
         <img src="<?= $this->assetUrl("img/calvin.jpg")?>"class="mimic img-responsive" alt="BD Calvin et Hobbes">
+        <img src="<?= $this->assetUrl("img/calvin2.jpg")?>"class="mimic img-responsive" alt="BD Calvin et Hobbes">
+        <img src="<?= $this->assetUrl("img/mafalda2.jpg")?>"class="mimic img-responsive" alt="BD Mafalda">
         <p>Et quoi de plus concis et expressif qu’une mimique ?</p>
         <p>Suivons le conseil de Bernard Haller : « N’ouvrez plus la bouche. Parlez sans dire un mot »</p>
         <p>(Le visage parle, Bernard Haller, Patrick Rambaud, aux éditions Balland. 1988)</p>
         <img src="<?= $this->assetUrl("img/le-visage-parle.jpg")?>"class="mimic img-responsive" alt="Livre le visage parle de Bernard Haller">
-        <p>Mimicstrips, c’est donc la rencontre des comics trips et des mimiques.</p>
+        <p>Mimicstrips, c’est donc la rencontre des comics strips et des mimiques.</p>
         <p>En trois mimiques (et trois textes courts), tout doit être dit.</p>
         
     </div> <!-- col-md-12 -->

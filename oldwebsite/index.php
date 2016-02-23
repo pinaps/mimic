@@ -2,7 +2,7 @@
 
 include(__DIR__.'/config/connect.php');
 
-// Moteur de recherche en GET
+// Chargement de la base de données des strips
 if(isset($_GET['stripName'])) {
   $stripName = $_GET['stripName'];
 
@@ -190,7 +190,7 @@ else {
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
+        <!-- TODO remplacer par des versions CDN  -->
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/plugins.js"></script>

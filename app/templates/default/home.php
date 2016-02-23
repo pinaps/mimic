@@ -1,10 +1,8 @@
 <?php $this->layout('layout', ['title' => 'Accueil']) ?>
 
-
-
 <?php $this->start('main_content');
 
-// ouvre la bdd 
+// ouvre la bdd, 
 require(__DIR__.'/config/connect.php');
 
 // Moteur de recherche en GET
@@ -33,8 +31,7 @@ else {
     <div class="container-fluid">
       <div class="row">
                
-
-    <?php if(!empty($allStrips)): ?>
+      <?php if(!empty($allStrips)): ?>
 
       <?php foreach ($allStrips as $keyStrip => $strip): ?>
          
@@ -43,28 +40,25 @@ else {
         <!-- Affiche le titre -->
           <h2> <?php echo $strip['titre']; ?> </h2>
 
-
           <!-- Affiche les images et leurs textes respectifs -->
           <div class="col-md-3">
-
-            <img src=" <?= $this->assetUrl("img/mafalda.jpg")?>" class="mimic img-responsive" alt="une mimique">            
-            <!-- TODO: insérer l'image depuis nom en BDD -->
-            <p> <?php echo $strip['texte1']; ?> </p>
+            <img src=" <?= $this->assetUrl('img/'.$strip['image1'])?>" class="mimic img-responsive" alt="une première mimique">
+            <?php echo $strip['image1']; ?>
           </div>
 
           <div class="col-md-3">
-            <img src=" <?php echo $strip['image2']; ?>" class="mimic img-responsive" alt="une mimique">
+            <img src=" <?= $this->assetUrl('img/'.$strip['image2'])?>" class="mimic img-responsive" alt="une deuxième mimique">
             <p> <?php echo $strip['texte2']; ?> </p>
           </div>
 
           <div class="col-md-3">
-            <img src=" <?php echo $strip['image3']; ?>" class="mimic img-responsive" alt="une mimique">
+            <img src=" <?= $this->assetUrl('img/'.$strip['image3'])?>" class="mimic img-responsive" alt="une troisième mimique">
             <p> <?php echo $strip['texte3']; ?> </p>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-md-3">
             <button type="button" class="btn btn-danger">
-              <span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Réutiliser les phot
+              <span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Réutiliser les photos
             </button>
             <br><br>
             <button type="button" class=" btn btn-danger">
@@ -75,7 +69,8 @@ else {
               <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> J'aime 
             </button>
           </div>
-        </div> <!-- col-md-11 -->
+
+        </div> <!-- col-md-12 -->
             
 
       <?php endforeach;
@@ -88,6 +83,6 @@ else {
 
         </div> <!-- row -->
       </div> <!-- /container-fluid -->
-    </div>
+    </div>  <!-- /main -->
 
 <?php $this->stop('main_content') ?>
