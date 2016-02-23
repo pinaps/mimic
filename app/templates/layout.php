@@ -34,13 +34,10 @@
         <!-- Affichage barre de navigation -->
         <div id="nav">
           <h2>Mimiques</h2>
-	        <a class="btn btn-warning glyphicon  largeurBtn" type="button" href="<?= $this->url('home'); ?>"> <span class="glyphicon glyphicon-log-in absoluteIcon" aria-hidden="true"></span>Se connecter</a>
-	        <br><br>
-	           
-	          
-	            <!-- On peut créer des boutons ici http://buttonoptimizer.com/ -->
-	          <!-- les télécharger au format png et les rendre responsive -->
-	          <!-- deux exemples ci-après -->
+	        <a class="btn btn-warning glyphicon  largeurBtn" type="button" href="<?= $this->url('login'); ?>"> <span class="glyphicon glyphicon-log-in absoluteIcon" aria-hidden="true"></span>Se connecter</a>
+          <a class="btn" type="button" href="<?= $this->url('register'); ?>"> Pas encore membre ?</a>
+          <br><br>
+
 	        <a class="btn btn-primary glyphicon  largeurBtn" type="button" href="<?= $this->url('home'); ?>"> <span class="glyphicon glyphicon-time absoluteIcon" aria-hidden="true"></span>Les plus récentes</a>
 	        <br><br>
 	                   
