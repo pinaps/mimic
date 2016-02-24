@@ -50,11 +50,11 @@
                   </div>
 
                   <div class="form-group">
-                    <p class="help-block"><a href="forgotPassword.php">Mot de passe oublié ?</a></p>
+                    <p class="btn btn-default btn-xs"><a href="forgotPassword.php">Mot de passe oublié ?</a></p>
                   </div>
 
-                  <button type="submit" class="btn btn-danger btn-lg" id="btnEnvoyer" name="action">
-                    <span class="glyphicon glyphicon-send"  aria-hidden="true"></span> Envoyer !
+                  <button type="submit" class="btn btn-warning btn-lg" id="btnEnvoyer" name="action">
+                    <span class="glyphicon glyphicon-log-in"  aria-hidden="true"></span>   OK
                   </button>
 
           </form> <!-- formulaire de login -->

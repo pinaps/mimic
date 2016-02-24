@@ -35,7 +35,6 @@ else {
 
       <?php foreach ($allStrips as $keyStrip => $strip): ?>
          
-       
         <div class="col-md-12">
         <!-- Affiche le titre -->
           <h2> <?php echo $strip['titre']; ?> </h2>
@@ -43,7 +42,7 @@ else {
           <!-- Affiche les images et leurs textes respectifs -->
           <div class="col-md-3">
             <img src=" <?= $this->assetUrl('img/'.$strip['image1'])?>" class="mimic img-responsive" alt="une première mimique">
-            <?php echo $strip['image1']; ?>
+            <?php echo $strip['texte1']; ?>
           </div>
 
           <div class="col-md-3">
@@ -68,10 +67,10 @@ else {
             <button type="button" class="btn btn-success">
               <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> J'aime 
             </button>
+            <span><?php echo $strip['nbre_like']; ?></span>
           </div>
 
-        </div> <!-- col-md-12 -->
-            
+        </div> <!-- col-md-12 -->       
 
       <?php endforeach;
 

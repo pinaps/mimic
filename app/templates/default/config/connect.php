@@ -3,7 +3,7 @@
 define('HOST', 'localhost'); // Domaine ou IP du serveur ou est située la base de données
 define('USER', 'root'); // Nom d'utilisateur autorisé à se connecter à la base
 define('PASSWORD', '');  // Mot de passe de connexion à la base
-define('DBNAME', 'mimicc'); // Base de données sur laquelle on va faire les requêtes
+define('DBNAME', 'mimic'); // Base de données sur laquelle on va faire les requêtes
 
 $db_options = array(
     PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8", // On force l'encodage en utf8

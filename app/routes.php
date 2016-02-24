@@ -13,10 +13,11 @@
 
 		['POST', '/publier', 'Publish#submit', 'publierPost'],
 
-		['GET', '/se connecter', 'Login#index', 'login'],
-		['GET', '/login', 'Login#index', 'login2'],
-		['GET', '/se loger', 'Login#index', 'login3'],
-		['GET', '/se loguer', 'Login#index', 'login4'],
+
+		['GET', '/login', 'Login#index', 'login'],
+		['GET', '/connexion', 'Login#index', 'login2'],
+		['GET', '/connection', 'Login#index', 'login3'],
+		
 
 		['GET', '/s\'enregister', 'Register#index', 'register'],
 		['GET', '/nouveau', 'Register#index', 'register1'],
