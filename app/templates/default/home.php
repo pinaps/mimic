@@ -4,6 +4,7 @@
 
 // ouvre la bdd, 
 require(__DIR__.'/config/connect.php');
+// TODO : revoir car bdd ouverte dans \config.db
 
 // Moteur de recherche en GET
 if(isset($_GET['stripName'])) {

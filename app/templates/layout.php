@@ -35,7 +35,7 @@
         <div id="nav">
           <h2>Mimiques</h2>
 	        <a class="btn btn-warning glyphicon  largeurBtn" type="button" href="<?= $this->url('login'); ?>"> <span class="glyphicon glyphicon-log-in absoluteIcon" aria-hidden="true"></span>Se connecter</a>
-          <a class="btn btn-default btn-xs" type="button" href="<?= $this->url('register'); ?>"> Pas encore membre ?</a>
+          <a class="btn" type="button" href="<?= $this->url('register'); ?>"> Pas encore membre ?</a>
           <br><br>
 
 	        <a class="btn btn-primary glyphicon  largeurBtn" type="button" href="<?= $this->url('home'); ?>"> <span class="glyphicon glyphicon-time absoluteIcon" aria-hidden="true"></span>Les plus récentes</a>
@@ -75,18 +75,7 @@
 	         	<br><br> 
 	           
 	        	<a class="btn btn-success glyphicon  largeurBtn" type="button" href="<?= $this->url('merci'); ?>"> <span class="glyphicon glyphicon-heart absoluteIcon" aria-hidden="true"></span>Remerciements</a>
-	          	<br><br> 
-           
-
-          <!-- <p><a class="btn btn-success taille" href="#" role="button">CGU</a></p>
-          <p><a class="btn btn-success taille" href="mailto:todo@todo.com" role="button">Contact</a></p>
-          <p><a class="btn btn-success taille" href="mailto:todo@todo.com" role="button">Aide</a></p>
-          <p><a class="btn btn-success taille" href="mailto:todo@todo.com" role="button">Remerciements</a></p> -->
-          <br><br>
-           
-          <!-- <p><a class="btn btn-warning" href="publier.php" role="button">Publier un strip</a></p> -->
-          <br><br><br><br><br><br>
-          <!-- <p><a class="btn btn-warning" href="envoyer.php" role="button">Je veux le faire</a></p> -->
+	         
         </div>
 
 
